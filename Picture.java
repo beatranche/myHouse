@@ -25,6 +25,15 @@ public class Picture
         // nothing to do... instance variables are automatically set to null
     }
 
+    public void atardecer()
+    {
+       if (wall != null)
+       {
+           sun.makeVisible();
+           sun.slowMoveVertical(80);
+       }
+    }
+
     /**
      * Draw this picture.
      */
@@ -95,4 +104,16 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+
+    
+
+
+
+
+
+
+
 }
+
+
+
