@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square field;
+    private Person persona;
 
     /**
      * Constructor for objects of class Picture
@@ -27,11 +28,15 @@ public class Picture
 
     public void atardecer()
     {
-       if (wall != null)
-       {
+   
            sun.makeVisible();
            sun.slowMoveVertical(80);
-       }
+           persona = new Person();
+           persona.makeVisible();
+           persona.slowMoveHorizontal(100);
+
+           
+       
     }
 
     /**
